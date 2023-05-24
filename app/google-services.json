@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "819462079811",
+    "project_id": "librarydata-b59b7",
+    "storage_bucket": "librarydata-b59b7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:819462079811:android:e3c21c960dc7bbd9cb9bf6",
+        "android_client_info": {
+          "package_name": "com.example.crudoper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "819462079811-kevuof26m82qgjmq0uhddhtee484iirp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvXSNkD4AuIrVpUhoAnEGSDeKCVMMq9PQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "819462079811-kevuof26m82qgjmq0uhddhtee484iirp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

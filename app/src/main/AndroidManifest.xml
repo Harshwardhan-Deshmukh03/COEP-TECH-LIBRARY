@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/finalone"
+        android:label="@string/app_display_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CrudOper"
+        tools:targetApi="31">
+        <activity
+            android:name=".adminHomeSearch"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+<!--            android:theme="@style/ThemeOverlay.AppCompat.DayNight.ActionBar"-->
+
+
+        <activity
+            android:name=".userSearch"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".useHomeFinePay"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".AdminHomeReturnBook"
+            android:exported="false"
+            android:parentActivityName=".AdminHome"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AdminHomeReissue"
+            android:exported="false"
+            android:parentActivityName=".AdminHome"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AdminHomeIssue"
+            android:exported="false"
+            android:parentActivityName=".AdminHome"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".userHomeFine"
+            android:exported="false"
+            android:parentActivityName=".UserHome"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AdminHomeRemoveBook"
+            android:exported="false"
+            android:parentActivityName=".AdminHome"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AdminHomeAddBook"
+            android:exported="false"
+            android:parentActivityName=".AdminHome"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AdminHomeAddRemoveUser"
+            android:exported="false"
+            android:parentActivityName=".AdminHome"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".userHomeMyBooks"
+            android:exported="false"
+            android:parentActivityName=".UserHome"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".userHomeCheckFine"
+            android:exported="false"
+            android:parentActivityName=".UserHome"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".userHomeSearchChange"
+            android:exported="false"
+            android:parentActivityName=".UserHome"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".userHomeSearch"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AdminHome"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UserHome"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".delete"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".update"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".read"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".create"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".splashscreen"
+            android:exported="true"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

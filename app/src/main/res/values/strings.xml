@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">crud oper</string>
+    <string name="app_display_name">COEP TECH LIBRARY</string>
+    <string-array name="choices">
+        <item>Select User</item>
+        <item>Student</item>
+        <item>Admin</item>
+    </string-array>
+</resources>
