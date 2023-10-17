@@ -23,15 +23,16 @@
                 android:textColor="@color/black"
                 android:textSize="26sp"
                 android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/bookName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:paddingBottom="5sp"
                 android:text="Thomas Calculus "
                 android:textColor="@color/black"
-                android:textSize="20sp"
-                android:paddingBottom="5sp"
-                />
+                android:textSize="20sp" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
@@ -68,14 +69,15 @@
                 android:textColor="@color/black"
                 android:textSize="26sp"
                 android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/issuedNo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
                 android:text="1234"
                 android:textColor="@color/black"
-                android:textSize="20sp"
-                />
+                android:textSize="20sp" />
         </LinearLayout>
     </LinearLayout>
 
