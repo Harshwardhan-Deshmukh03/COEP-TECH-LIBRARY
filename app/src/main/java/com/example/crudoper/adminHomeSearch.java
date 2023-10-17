@@ -61,14 +61,7 @@ public class adminHomeSearch extends AppCompatActivity {
         overridePendingTransition(R.anim.slide_in_left,R.anim.slide_out_right);
 
     }
-    @Override
-    public void onBackPressed() {
-        Intent i=new Intent(this,AdminHome.class);
-        startActivity(i);
-        finish();
-        overridePendingTransition(R.anim.slide_in_left,R.anim.slide_out_right);
-        super.onBackPressed();
-    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -100,4 +93,12 @@ public class adminHomeSearch extends AppCompatActivity {
         recyclerView.setAdapter(adapter);
     }
 
+    @Override
+    public void onBackPressed() {
+        Intent i=new Intent(this,AdminHome.class);
+        startActivity(i);
+        finish();
+        overridePendingTransition(R.anim.slide_out_right,R.anim.slide_in_left);
+        super.onBackPressed();
+    }
 }
