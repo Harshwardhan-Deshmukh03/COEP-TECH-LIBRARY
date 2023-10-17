@@ -24,7 +24,7 @@ public class AdminHome extends AppCompatActivity {
     public void onClickAddRemove(View view){
         Intent intent =new Intent(this,AdminHomeAddRemoveUser.class);
         startActivity(intent);
-        overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left);
+        overridePendingTransition(R.anim.slide_out_left,R.anim.slide_in_right);
 
     }
     public void onclickLogout(View view){
