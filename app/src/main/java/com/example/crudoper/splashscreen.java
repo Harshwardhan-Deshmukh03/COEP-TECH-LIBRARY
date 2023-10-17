@@ -19,7 +19,7 @@ public class splashscreen extends AppCompatActivity {
                 startActivity(intent);
                 finish();
             }
-        },2000);
+        },3000);
     }
 
 }
