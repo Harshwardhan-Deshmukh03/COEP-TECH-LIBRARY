@@ -71,7 +71,7 @@ public class AdminHomeAddRemoveUser extends AppCompatActivity {
     }
 
     public void onclickremove(View view){
-        // check if account is there and the fine is zero and then proceed to delete, otherwise raise a suitable toast
+
         EditText editText;
         DatabaseReference reference;
         editText=findViewById(R.id.editTextTextPersonName11);

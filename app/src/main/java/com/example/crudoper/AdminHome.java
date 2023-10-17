@@ -82,7 +82,6 @@ public class AdminHome extends AppCompatActivity {
         Intent intent= new Intent(this,adminHomeSearch.class);
         startActivity(intent);
 
-//        Toast.makeText(this, "This feature is coming soon !", Toast.LENGTH_SHORT).show();
     }
 
 }

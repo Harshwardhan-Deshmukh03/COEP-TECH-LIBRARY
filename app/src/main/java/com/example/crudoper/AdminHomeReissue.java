@@ -84,7 +84,7 @@ public class AdminHomeReissue extends AppCompatActivity {
             public void onComplete(@NonNull Task<DataSnapshot> task) {
                 if (task.isSuccessful()){
                     if (task.getResult().exists()){
-//                        Toast.makeText(AdminHomeReissue.this, "User already exists", Toast.LENGTH_SHORT).show();
+
                         DataSnapshot dataSnapshot= task.getResult();
                         String book1=String.valueOf(dataSnapshot.child("oneSerial").getValue());
                         String book2=String.valueOf(dataSnapshot.child("twoSerial").getValue());
@@ -95,7 +95,7 @@ public class AdminHomeReissue extends AppCompatActivity {
                                 public void onComplete(@NonNull Task<DataSnapshot> task) {
                                     if (task.isSuccessful()){
                                         if (task.getResult().exists()){
-//                                            Toast.makeText(AdminHomeReissue.this, "Successfully read", Toast.LENGTH_SHORT).show();
+
                                             DataSnapshot dataSnapshot1= task.getResult();
                                             String issuedate=String.valueOf(dataSnapshot1.child("oneIssue").getValue());
                                             String currFine=String.valueOf(dataSnapshot1.child("fine").getValue());
@@ -133,7 +133,7 @@ public class AdminHomeReissue extends AppCompatActivity {
                                 public void onComplete(@NonNull Task<DataSnapshot> task) {
                                     if (task.isSuccessful()){
                                         if (task.getResult().exists()){
-//                                            Toast.makeText(AdminHomeReissue.this, "Successfully read", Toast.LENGTH_SHORT).show();
+
                                             DataSnapshot dataSnapshot1= task.getResult();
                                             String issuedate=String.valueOf(dataSnapshot1.child("oneIssue").getValue());
                                             String currFine=String.valueOf(dataSnapshot1.child("fine").getValue());

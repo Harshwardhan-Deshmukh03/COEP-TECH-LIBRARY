@@ -53,7 +53,7 @@ public class userHomeSearchChange extends AppCompatActivity {
         textView=findViewById(R.id.textView15);
         Intent second=getIntent();
         String pass=second.getStringExtra(MainActivity.EXTRA_NAME);
-//        Toast.makeText(this, pass, Toast.LENGTH_SHORT).show();
+
         textView.setText("MIS No.: "+pass);
     }
     public void onChange(View view){

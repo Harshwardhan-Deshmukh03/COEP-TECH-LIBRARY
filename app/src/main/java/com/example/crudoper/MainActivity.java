@@ -168,10 +168,10 @@ public class MainActivity extends AppCompatActivity {
             public void onComplete(@NonNull Task<DataSnapshot> task) {
                 if (task.isSuccessful()){
                     if (task.getResult().exists()){
-//                        Toast.makeText(MainActivity.this, "Successfully read", Toast.LENGTH_SHORT).show();
+
                         DataSnapshot dataSnapshot= task.getResult();
                         String password=String.valueOf(dataSnapshot.child("password").getValue());
-//                        String username=String.valueOf(dataSnapshot.child("username").getValue());
+
                         if (password.equals(pass)){
                             Intent intent=new Intent(getApplicationContext(),AdminHome.class);
                             Button b=findViewById(R.id.button12);

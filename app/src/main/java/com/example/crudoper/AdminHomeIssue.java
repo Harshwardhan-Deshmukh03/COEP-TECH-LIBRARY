@@ -59,7 +59,7 @@ public class AdminHomeIssue extends AppCompatActivity {
             public void onComplete(@NonNull Task<DataSnapshot> task) {
                 if (task.isSuccessful()){
                     if (task.getResult().exists()){
-//                        Toast.makeText(AdminHomeIssue.this, "User already exists", Toast.LENGTH_SHORT).show();
+
                         DataSnapshot dataSnapshot= task.getResult();
                         String book1=String.valueOf(dataSnapshot.child("oneName").getValue());
                         String book2=String.valueOf(dataSnapshot.child("twoName").getValue());
@@ -70,7 +70,7 @@ public class AdminHomeIssue extends AppCompatActivity {
                                 public void onComplete(@NonNull Task<DataSnapshot> task) {
                                     if (task.isSuccessful()){
                                         if (task.getResult().exists()){
-//                                            Toast.makeText(AdminHomeIssue.this, "Successfully read", Toast.LENGTH_SHORT).show();
+
                                             DataSnapshot dataSnapshot1= task.getResult();
                                             String name=String.valueOf(dataSnapshot1.child("bookstatus").getValue());
                                             String bookname=String.valueOf(dataSnapshot1.child("bookName").getValue());
