@@ -103,6 +103,7 @@ public class userHomeSearchChange extends AppCompatActivity {
                                         Toast.makeText(userHomeSearchChange.this, "Successfully updated", Toast.LENGTH_SHORT).show();
                                         Intent intent=new Intent(userHomeSearchChange.this,MainActivity.class);
                                         Toast.makeText(userHomeSearchChange.this, "Log in with new Password", Toast.LENGTH_SHORT).show();
+                                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                                         startActivity(intent);
 
 
